@@ -11,12 +11,13 @@ namespace IMC
 {
     public partial class GestionarPacientes : Form
     {
-        private Clinica objclinica;
+        IClinica clinica;
 
-        public GestionarPacientes(Clinica clinica)
+        public GestionarPacientes()
         {
             InitializeComponent();
-            objclinica = clinica;
+
+            clinica = container.GetContainer().GetInstance<IClinica>();
         }
 
         protected override void OnLoad(EventArgs e)
@@ -24,7 +25,7 @@ namespace IMC
             base.OnLoad(e);
 
             this.pacienteBindingSource.DataSource = null;
-            this.pacienteBindingSource.DataSource = objclinica.ObtenerPacientes();
+            this.pacienteBindingSource.DataSource = clinica.ObtenerPacientes();
         }
 
         private void agregar_Click(object sender, EventArgs e)
@@ -52,10 +53,10 @@ namespace IMC
                 objpaciente.Domicilio = this.domicilio.Text;
                 objpaciente.Telefono = Convert.ToInt32(this.telefono.Text);
 
-                objclinica.AgregarPaciente(objpaciente);
+                clinica.AgregarPaciente(objpaciente);
 
                 this.pacienteBindingSource.DataSource = null;
-                this.pacienteBindingSource.DataSource = objclinica.ObtenerPacientes();
+                this.pacienteBindingSource.DataSource = clinica.ObtenerPacientes();
 
                 MessageBox.Show("Se agrego correctamente", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Close(); 

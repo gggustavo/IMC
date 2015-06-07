@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SimpleInjector;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
@@ -7,6 +8,7 @@ namespace IMC
 {
     static class Program
     {
+       
         /// <summary>
         /// Punto de entrada principal para la aplicación.
         /// </summary>
@@ -15,7 +17,11 @@ namespace IMC
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Principal());
+            container.CreateInstance();
+            Application.Run(container.GetContainer().GetInstance<Principal>());
         }
+
+
+
     }
 }

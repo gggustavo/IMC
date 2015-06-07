@@ -5,7 +5,7 @@ using System.Text;
 
 namespace IMC
 {
-    public class Clinica
+    public class Clinica : IClinica
     {
         private List<Paciente> ListaPacientes;     
         private List<Medico> ListaMedicos;        

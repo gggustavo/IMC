@@ -29,3 +29,16 @@ C:\Users\Gustavo\Desktop\IMC\IMC\obj\x86\Debug\IMC.GestionarPacientes.resources
 C:\Users\Gustavo\Desktop\IMC\IMC\obj\x86\Debug\IMC.Principal.resources
 C:\Users\Gustavo\Desktop\IMC\IMC\obj\x86\Debug\IMC.Properties.Resources.resources
 C:\Users\Gustavo\Desktop\IMC\IMC\obj\x86\Debug\IMC.csproj.GenerateResource.Cache
+C:\Users\Gustavo\Desktop\IMC\IMC\IMC\bin\Debug\IMC.exe
+C:\Users\Gustavo\Desktop\IMC\IMC\IMC\bin\Debug\IMC.pdb
+C:\Users\Gustavo\Desktop\IMC\IMC\IMC\bin\Debug\SimpleInjector.dll
+C:\Users\Gustavo\Desktop\IMC\IMC\IMC\bin\Debug\SimpleInjector.xml
+C:\Users\Gustavo\Desktop\IMC\IMC\IMC\obj\x86\Debug\IMC.GestionarAtencion.resources
+C:\Users\Gustavo\Desktop\IMC\IMC\IMC\obj\x86\Debug\IMC.GestionarMedico.resources
+C:\Users\Gustavo\Desktop\IMC\IMC\IMC\obj\x86\Debug\IMC.GestionarPacientes.resources
+C:\Users\Gustavo\Desktop\IMC\IMC\IMC\obj\x86\Debug\IMC.Principal.resources
+C:\Users\Gustavo\Desktop\IMC\IMC\IMC\obj\x86\Debug\IMC.Properties.Resources.resources
+C:\Users\Gustavo\Desktop\IMC\IMC\IMC\obj\x86\Debug\IMC.csproj.GenerateResource.Cache
+C:\Users\Gustavo\Desktop\IMC\IMC\IMC\obj\x86\Debug\IMC.exe
+C:\Users\Gustavo\Desktop\IMC\IMC\IMC\obj\x86\Debug\IMC.pdb
+C:\Users\Gustavo\Desktop\IMC\IMC\IMC\obj\x86\Debug\IMC.csprojResolveAssemblyReference.cache

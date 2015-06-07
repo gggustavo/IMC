@@ -11,20 +11,21 @@ namespace IMC
 {
     public partial class GestionarMedico : Form
     {
-        Clinica objclinica;
+        IClinica clinica;
 
-        public GestionarMedico(Clinica clinica)
+        public GestionarMedico()
         {
             InitializeComponent();
-            objclinica = clinica;
+
+            clinica = container.GetContainer().GetInstance<IClinica>();
         }
 
         protected override void OnLoad(EventArgs e)
         {
             base.OnLoad(e);
-
+   
             this.medicoBindingSource.DataSource = null;
-            this.medicoBindingSource.DataSource = objclinica.ObtenerMedicos();  
+            this.medicoBindingSource.DataSource = clinica.ObtenerMedicos();  
 
         }
 
@@ -33,14 +34,17 @@ namespace IMC
             //TODO: resta validar campos ingresados por el usuario.
             try
             {
-                Medico medico = new Medico();
-                medico.Matricula = Convert.ToInt32(this.nromatricula.Text);
-                medico.Nombre = this.nombre.Text;
-                medico.Telefono = Convert.ToInt32(this.telefono.Text);
-                medico.Email = this.email.Text;
-                objclinica.AgregarMedico(medico);                
+                Medico medico = new Medico() { 
+                    Matricula = Convert.ToInt32(this.nromatricula.Text),
+                    Nombre = this.nombre.Text,
+                    Telefono = Convert.ToInt32(this.telefono.Text),
+                    Email = this.email.Text,
+                };
+
+                clinica.AgregarMedico(medico);     
+           
                 this.medicoBindingSource.DataSource = null;
-                this.medicoBindingSource.DataSource = objclinica.ObtenerMedicos();
+                this.medicoBindingSource.DataSource = clinica.ObtenerMedicos();
                 MessageBox.Show("Se agrego correctamente", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Close(); 
             }
