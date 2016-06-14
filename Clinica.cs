@@ -7,9 +7,9 @@ namespace IMC
 {
     public class Clinica : IClinica
     {
-        private List<Paciente> ListaPacientes;     
-        private List<Medico> ListaMedicos;        
-        private List<Atencion> ListaAtenciones;
+        private IList<Paciente> ListaPacientes;
+        private IList<Medico> ListaMedicos;
+        private IList<Atencion> ListaAtenciones;
 
         //Constructor de la clase Clinica
         public Clinica()
@@ -22,19 +22,19 @@ namespace IMC
         }
 
         //Obtiene la coleccion de atenciones.
-        public List<Atencion> ObtenerAtenciones()
+        public IEnumerable<Atencion> ObtenerAtenciones()
         {
             return this.ListaAtenciones;
         }
 
         //Obtiene la coleccion de medicos.
-        public List<Medico> ObtenerMedicos()
+        public IEnumerable<Medico> ObtenerMedicos()
         {
             return this.ListaMedicos;
         }
 
         //Obtiene la coleccion de pacientes.
-        public List<Paciente> ObtenerPacientes()
+        public IEnumerable<Paciente> ObtenerPacientes()
         {
             return this.ListaPacientes;
         }

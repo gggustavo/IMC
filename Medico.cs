@@ -7,18 +7,6 @@ namespace IMC
 {
     public class Medico : Persona
     {
-
-        private int matricula;
-        public int Matricula
-        {
-            get
-            {
-                return matricula;                
-            }
-            set
-            {
-                matricula = value;
-            }
-        }
+        public int Matricula { get; set; }
     }
 }

@@ -22,8 +22,6 @@ namespace IMC
             Container.RegisterSingle<IClinica, Clinica>();
 
             Container.Register<Principal>();
-
-            //Container.Verify();
         }
 
         public static Container GetContainer()

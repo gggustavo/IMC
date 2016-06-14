@@ -24,7 +24,7 @@ namespace IMC
         {
             for (int i = 1; i < 6; i++)
             {
-                Medico medico = new Medico()
+                var medico = new Medico()
                 {
                     Matricula = i,
                     Nombre = "Medico " + i,
@@ -36,7 +36,7 @@ namespace IMC
 
             for (int i = 1; i < 6; i++)
             {
-                Paciente paciente = new Hombre()
+                var paciente = new Hombre()
                 {
                     Dni = 45467890 + i,
                     Domicilio = "Domicilio hombre " + i,
@@ -50,7 +50,7 @@ namespace IMC
 
             for (int i = 1; i < 6; i++)
             {
-                Paciente paciente = new Mujer()
+                var paciente = new Mujer()
                 {
                     Dni = 18467890 + i,
                     Domicilio = "Domicilio Mujer " + i,

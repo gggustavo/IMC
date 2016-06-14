@@ -8,16 +8,18 @@ namespace IMC
     public interface IClinica
     {
 
-        void AgregarMedico(IMC.Medico medico);
+        void AgregarMedico(Medico medico);
 
-        void AgregarPaciente(IMC.Paciente Paciente);
+        void AgregarPaciente(Paciente Paciente);
 
-        List<IMC.Atencion> ObtenerAtenciones();
+        void AgregarAtencion(Atencion Atencion);
 
-        List<IMC.Medico> ObtenerMedicos();
+        IEnumerable<Atencion> ObtenerAtenciones();
 
-        List<IMC.Paciente> ObtenerPacientes();
+        IEnumerable<Medico> ObtenerMedicos();
 
-        void AgregarAtencion(IMC.Atencion Atencion);
+        IEnumerable<Paciente> ObtenerPacientes();
+
+        
     }
 }

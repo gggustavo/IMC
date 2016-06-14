@@ -45,13 +45,13 @@
             this.altura = new System.Windows.Forms.TextBox();
             this.peso = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.atencionBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.agregar = new System.Windows.Forms.Button();
             this.fechaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombrePacienteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pesoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.estaturaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.iMCDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.atencionBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.agregar = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pacienteBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.medicoBindingSource)).BeginInit();
@@ -75,14 +75,15 @@
             this.groupBox1.Controls.Add(this.peso);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(552, 202);
+            this.groupBox1.Size = new System.Drawing.Size(552, 165);
             this.groupBox1.TabIndex = 10;
             this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Informacion";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(203, 121);
+            this.label7.Location = new System.Drawing.Point(192, 108);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(22, 13);
             this.label7.TabIndex = 23;
@@ -91,7 +92,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(203, 148);
+            this.label6.Location = new System.Drawing.Point(192, 135);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(15, 13);
             this.label6.TabIndex = 22;
@@ -100,7 +101,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(59, 94);
+            this.label5.Location = new System.Drawing.Point(48, 81);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(30, 13);
             this.label5.TabIndex = 21;
@@ -109,7 +110,7 @@
             // Nac
             // 
             this.Nac.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.Nac.Location = new System.Drawing.Point(97, 88);
+            this.Nac.Location = new System.Drawing.Point(86, 75);
             this.Nac.Name = "Nac";
             this.Nac.Size = new System.Drawing.Size(200, 20);
             this.Nac.TabIndex = 20;
@@ -119,7 +120,7 @@
             this.paciente.DataSource = this.pacienteBindingSource;
             this.paciente.DisplayMember = "Nombre";
             this.paciente.FormattingEnabled = true;
-            this.paciente.Location = new System.Drawing.Point(97, 59);
+            this.paciente.Location = new System.Drawing.Point(86, 46);
             this.paciente.Name = "paciente";
             this.paciente.Size = new System.Drawing.Size(121, 21);
             this.paciente.TabIndex = 19;
@@ -134,7 +135,7 @@
             this.medico.DataSource = this.medicoBindingSource;
             this.medico.DisplayMember = "Nombre";
             this.medico.FormattingEnabled = true;
-            this.medico.Location = new System.Drawing.Point(97, 32);
+            this.medico.Location = new System.Drawing.Point(86, 19);
             this.medico.Name = "medico";
             this.medico.Size = new System.Drawing.Size(121, 21);
             this.medico.TabIndex = 18;
@@ -147,7 +148,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(59, 148);
+            this.label4.Location = new System.Drawing.Point(48, 135);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(34, 13);
             this.label4.TabIndex = 17;
@@ -156,7 +157,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(59, 121);
+            this.label3.Location = new System.Drawing.Point(48, 108);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(31, 13);
             this.label3.TabIndex = 16;
@@ -165,7 +166,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(41, 62);
+            this.label2.Location = new System.Drawing.Point(30, 49);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(49, 13);
             this.label2.TabIndex = 15;
@@ -174,7 +175,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(48, 32);
+            this.label1.Location = new System.Drawing.Point(37, 19);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(42, 13);
             this.label1.TabIndex = 14;
@@ -182,14 +183,14 @@
             // 
             // altura
             // 
-            this.altura.Location = new System.Drawing.Point(97, 145);
+            this.altura.Location = new System.Drawing.Point(86, 132);
             this.altura.Name = "altura";
             this.altura.Size = new System.Drawing.Size(100, 20);
             this.altura.TabIndex = 13;
             // 
             // peso
             // 
-            this.peso.Location = new System.Drawing.Point(97, 114);
+            this.peso.Location = new System.Drawing.Point(86, 101);
             this.peso.Name = "peso";
             this.peso.Size = new System.Drawing.Size(100, 20);
             this.peso.TabIndex = 12;
@@ -205,24 +206,10 @@
             this.estaturaDataGridViewTextBoxColumn,
             this.iMCDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.atencionBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 275);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 226);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(552, 154);
+            this.dataGridView1.Size = new System.Drawing.Size(552, 211);
             this.dataGridView1.TabIndex = 11;
-            // 
-            // atencionBindingSource
-            // 
-            this.atencionBindingSource.DataSource = typeof(IMC.DisplayAtencion);
-            // 
-            // agregar
-            // 
-            this.agregar.Location = new System.Drawing.Point(12, 232);
-            this.agregar.Name = "agregar";
-            this.agregar.Size = new System.Drawing.Size(75, 37);
-            this.agregar.TabIndex = 12;
-            this.agregar.Text = "Agregar";
-            this.agregar.UseVisualStyleBackColor = true;
-            this.agregar.Click += new System.EventHandler(this.agregar_Click);
             // 
             // fechaDataGridViewTextBoxColumn
             // 
@@ -254,15 +241,30 @@
             this.iMCDataGridViewTextBoxColumn.HeaderText = "IMC";
             this.iMCDataGridViewTextBoxColumn.Name = "iMCDataGridViewTextBoxColumn";
             // 
+            // atencionBindingSource
+            // 
+            this.atencionBindingSource.DataSource = typeof(IMC.DisplayAtencion);
+            // 
+            // agregar
+            // 
+            this.agregar.Location = new System.Drawing.Point(12, 183);
+            this.agregar.Name = "agregar";
+            this.agregar.Size = new System.Drawing.Size(75, 37);
+            this.agregar.TabIndex = 12;
+            this.agregar.Text = "Agregar";
+            this.agregar.UseVisualStyleBackColor = true;
+            this.agregar.Click += new System.EventHandler(this.agregar_Click);
+            // 
             // GestionarAtencion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(576, 441);
+            this.ClientSize = new System.Drawing.Size(576, 449);
             this.Controls.Add(this.agregar);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.groupBox1);
             this.Name = "GestionarAtencion";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "GestionarAtencion";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

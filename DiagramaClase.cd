@@ -6,7 +6,7 @@
       <Compartment Name="Fields" Collapsed="true" />
     </Compartments>
     <TypeIdentifier>
-      <HashCode>AAAQAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Medico.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -26,7 +26,7 @@
       <Compartment Name="Fields" Collapsed="true" />
     </Compartments>
     <TypeIdentifier>
-      <HashCode>AAABEEQAARBEAAEAAAAQAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAARBEAAEAAAAQAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Atencion.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -40,7 +40,7 @@
       <Compartment Name="Fields" Collapsed="true" />
     </Compartments>
     <TypeIdentifier>
-      <HashCode>EAEAAAABACAQAACgEAAAgAAAAAAAAAAAAAAAAhAAAAI=</HashCode>
+      <HashCode>EAEAAAAAACAAAAAAEAAAgAAAAAAAAAAAAAAAAgAAAAA=</HashCode>
       <FileName>Persona.cs</FileName>
     </TypeIdentifier>
   </Class>
